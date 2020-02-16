@@ -1,0 +1,12 @@
+{
+  "printWidth": 100,
+  "Semicolons": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "lf",
+  "jsxSingleQuote": false,
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "parser": "vue"
+}
