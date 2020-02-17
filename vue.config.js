@@ -23,6 +23,16 @@ module.exports = {
     },
   },
   chainWebpack(config) {
+    config.resolve.alias
+      .set('@api', resolve('src/api'))
+      .set('@assets', resolve('src/assets'))
+      .set('@components', resolve('src/components'))
+      .set('@filter', resolve('src/filter'))
+      .set('@store', resolve('src/store'))
+      .set('@styles', resolve('src/styles'))
+      .set('@utils', resolve('src/utils'))
+      .set('@views', resolve('src/views'))
+      .set('@$', resolve('src'));
     config.module
       .rule('svg')
       .exclude
