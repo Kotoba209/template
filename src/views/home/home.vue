@@ -30,8 +30,10 @@ export default {
 </script>
 
 <style module lang="less">
+/*@import "~@styles/main";*/
 .title {
   color: #42b983;
+  font-size: @font-size-lg;
 }
 
 .user {
