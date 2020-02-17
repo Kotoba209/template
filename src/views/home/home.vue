@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div :class="$style.home">
     <loading :loading="loading">
       <h1 :class="$style.title">Home page</h1>
       <svg-icon :class="$style.user" icon-class="user" />
@@ -31,6 +31,14 @@ export default {
 
 <style module lang="less">
 /*@import "~@styles/main";*/
+.home {
+  :global {
+    .van-button--primary {
+      background-color: #009a4a;
+    }
+  }
+}
+
 .title {
   color: #42b983;
   font-size: @font-size-lg;
