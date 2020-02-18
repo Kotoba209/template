@@ -1,5 +1,5 @@
 <template>
-  <div id="basic">
+  <div id="basic" :class="$style.basic">
     <router-view />
     <van-tabbar v-model="activeTab" :safe-area-inset-bottom="true" active-color="#fc5859">
       <van-tabbar-item icon="shop-o" to="/">首页</van-tabbar-item>
@@ -25,3 +25,8 @@ export default {
   },
 };
 </script>
+<style module lang="less">
+.basic{
+  padding-bottom: 20vw;
+}
+</style>

@@ -5,6 +5,7 @@ import router from './router';
 import store from './store';
 import './components';
 import * as filters from './filters';
+import '@/styles/global.less';
 
 Object.keys(filters)
   .forEach((key) => {
