@@ -1,8 +1,11 @@
 import Vue from 'vue';
 import Loading from './loading';
-import Index from './PoweredBy/index';
+import PoweredBy from './PoweredBy/index';
+import OrderList from './OrderList/index';
 
-Vue.component('index', Index);
+Vue.component('OrderList', OrderList);
+
+Vue.component('PoweredBy', PoweredBy);
 
 Vue.component('loading', Loading);
 

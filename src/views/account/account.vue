@@ -22,7 +22,7 @@
       </div>
     </div>
     <div :class="$style['am-card']" style="margin-top: 10px;">
-        <van-cell title="我的订单" is-link value="全部订单" />
+        <van-cell title="我的订单" value="全部订单" is-link url="/order" />
         <van-row type="flex" justify="center">
             <van-col span="6" >
               <svg-icon :class="$style['status-icon']" icon-class="wallet" />
@@ -96,9 +96,9 @@ Vue.use(Button)
 
 export default {
   name: 'account',
-  metaInfo: { title: '' },
+  metaInfo: { title: '个人中心' },
   components: {
-    PoweredBy,
+    [PoweredBy.name]: PoweredBy,
   },
   data() {
     return {
