@@ -152,7 +152,7 @@
         </van-grid-item>
       </van-grid>
     </van-panel>
-    <powered-by></powered-by>
+    <powered-by/>
   </div>
 </template>
 

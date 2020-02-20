@@ -1,18 +1,32 @@
 <template>
   <div :class="$style['bbs']">
-    <van-grid
-      :gutter="10"
-      :column-num="2"
-    >
-      <van-grid-item
-        v-for="value in 6"
-        :key="value"
-        icon="http://shoptest.zhihuasoft.com/images/89/6e/41/a7/896e41a7c08bab91594dde523bb0ec2f.png"
-        text="论坛留言"
-        to="/bbs/1"
-      />
-    </van-grid>
-    <powered-by></powered-by>
+    <div :class="$style.BbsArea">
+      <div
+        justify="around"
+        wrap="wrap"
+        :class="$style.flexContainer"
+      >
+        <div
+          v-for="i in 6"
+          :key='i'
+          :class="$style.area"
+          onClick='() => history.push(`/bbs/${val.id}`)'
+        >
+          <div :class="$style.iconWrapper">
+            <img
+              src="http://shoptest.zhihuasoft.com/images/89/6e/41/a7/896e41a7c08bab91594dde523bb0ec2f.png"
+              alt="论坛版块图片"
+              :class="$style.icon"
+            />
+          </div>
+          <div :class="$style.titleWrapper">
+            <div :class="$style.title">论坛版块</div>
+            <div :class="$style.extra">0条留言</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <powered-by />
   </div>
 </template>
 
@@ -39,9 +53,4 @@ export default {
 };
 </script>
 
-<style module lang="less">
-.bbs {
-  padding-top: 40px;
-  min-height: 80vh;
-}
-</style>
+<style module lang="less" src="./bbs.module.less"></style>

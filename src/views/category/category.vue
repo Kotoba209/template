@@ -5,30 +5,33 @@
       :items="items"
       :main-active-index.sync="active"
     >
-      <template slot="content">
-        <van-list
-          v-if="active === 0"
-          :class="$style['right-content']"
-        >
-          <div
-            :class="$style['goods-wrap']"
-            v-for="i in 8"
-            :key="i"
+      <van-list
+        slot="content"
+        v-if="active === 0"
+        :class="$style['right-content']"
+      >
+        <van-grid :column-num="3">
+          <van-grid-item
+            v-for="value in 6"
+            :key="value"
+            icon="photo-o"
+            text="文字"
           >
             <van-image
-              width="90"
-              height="90"
+              slot="icon"
+              width="80"
+              height="80"
               src="http://shoptest.zhihuasoft.com/images/8c/79/ee/90/8c79ee90313117bea1ccc1cddc3627e8.png"
               alt="商品图片"
             />
-            <span :class="$style['goods-title']">
+            <span slot="text" :class="$style['goods-title']">
               【公益扶贫】万车村万盛养殖专业合作社的五脚猪（不支持线上交易）
             </span>
-          </div>
-        </van-list>
-      </template>
+          </van-grid-item>
+        </van-grid>
+      </van-list>
     </van-tree-select>
-    <powered-by></powered-by>
+    <powered-by />
   </div>
 </template>
 
@@ -41,6 +44,8 @@ import {
   Image,
   TreeSelect,
   Search,
+  Grid,
+  GridItem,
 } from 'vant';
 
 
@@ -49,7 +54,9 @@ Vue.use(Button)
   .use(Cell)
   .use(Image)
   .use(TreeSelect)
-  .use(Search);
+  .use(Search)
+  .use(Grid)
+  .use(GridItem);
 
 export default {
   name: 'category',

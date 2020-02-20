@@ -4,7 +4,6 @@
     :class="$style.basic"
   >
     <router-view />
-    <!-- <powered-by></powered-by> -->
     <van-tabbar
       v-model="activeTab"
       :safe-area-inset-bottom="true"
