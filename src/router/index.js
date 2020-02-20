@@ -32,6 +32,16 @@ const routes = [
         name: 'category',
         component: () => import(/* webpackChunkName: "category" */ '@/views/category/category.vue'),
       },
+      {
+        path: '/bbs',
+        name: 'bbs',
+        component: () => import(/* webpackChunkName: "bbs" */ '@/views/bbs/bbs.vue'),
+      },
+      {
+        path: '/bbs/:id',
+        name: 'message',
+        component: () => import(/* webpackChunkName: "message" */ '@/views/bbs/message.vue'),
+      },
     ],
   },
 ];

@@ -1,0 +1,80 @@
+.message {
+  position: relative;
+  min-height: 80vh;
+  :global {
+    .van-panel__header {
+      padding: 0;
+    }
+
+    .van-panel {
+      padding: 10px 0 40px;
+      position: fixed;
+      width: 100%;
+      bottom: 70px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+
+.title {
+  display: flex;
+}
+
+.text {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: #333;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.synopsis {
+  margin-top: 10px;
+  color: #888;
+  font-size: 28px;
+}
+
+.content {
+  display: flex;
+}
+
+.user {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  flex: 2;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  :global {
+    .van-field {
+      margin-top: 10px;
+      border: 1px solid #ddd;
+    }
+  }
+}
+
+.inp-nav {
+  display: flex;
+  justify-content: space-between;
+
+  :global {
+    .van-button {
+      border-radius: 16px;
+    }
+  }
+}
+
+.nick-name {
+  margin-top: 8px;
+}

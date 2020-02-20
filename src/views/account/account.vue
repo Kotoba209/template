@@ -109,6 +109,7 @@
         <van-grid-item
           icon="photo-o"
           text="论坛互动"
+          to="/bbs"
         >
           <svg-icon
             slot="icon"
@@ -154,7 +155,6 @@
 
 <script>
 import Vue from 'vue';
-import PoweredBy from '@/components/powered-by';
 import {
   Button,
   Icon,
@@ -175,7 +175,6 @@ export default {
   name: 'account',
   metaInfo: { title: '个人中心' },
   components: {
-    [PoweredBy.name]: PoweredBy,
   },
   data() {
     return {
