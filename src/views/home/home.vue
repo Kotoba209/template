@@ -42,7 +42,6 @@ export default {
 }
 
 /* .title {
-  color: #42b983;
   font-size: @font-size-lg;
 } */
 
