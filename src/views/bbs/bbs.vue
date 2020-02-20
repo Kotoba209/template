@@ -1,11 +1,7 @@
 <template>
   <div :class="$style['bbs']">
     <div :class="$style.BbsArea">
-      <div
-        justify="around"
-        wrap="wrap"
-        :class="$style.flexContainer"
-      >
+      <div :class="$style.flexContainer">
         <div
           v-for="i in 6"
           :key='i'
