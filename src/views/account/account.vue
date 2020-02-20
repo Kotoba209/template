@@ -89,6 +89,7 @@
         <van-grid-item
           icon="photo-o"
           text="联系客服"
+          @click="handleContactService"
         >
           <svg-icon
             slot="icon"
@@ -99,6 +100,7 @@
         <van-grid-item
           icon="photo-o"
           text="收货地址"
+          to="/addresses"
         >
           <svg-icon
             slot="icon"
@@ -140,6 +142,7 @@
         <van-grid-item
           icon="photo-o"
           text="清理缓存"
+          @click="handleCleanCache"
         >
           <svg-icon
             slot="icon"
@@ -162,6 +165,7 @@ import {
   Panel,
   Grid,
   GridItem,
+  Dialog,
 } from 'vant';
 
 Vue.use(Button)
@@ -169,7 +173,8 @@ Vue.use(Button)
   .use(Cell)
   .use(Panel)
   .use(Grid)
-  .use(GridItem);
+  .use(GridItem)
+  .use(Dialog);
 
 export default {
   name: 'account',
@@ -188,6 +193,26 @@ export default {
   methods: {
     changeTagStatus() {
       this.activeMember = !this.activeMember;
+    },
+    handleContactService() {
+      Dialog.confirm({
+        title: '温馨提示',
+        message: '确定拨打客服电话吗？',
+      }).then(() => {
+        // on confirm
+      }).catch(() => {
+        // on cancel
+      });
+    },
+    handleCleanCache() {
+      Dialog.confirm({
+        title: '温馨提示',
+        message: '确定清空缓存吗？',
+      }).then(() => {
+        // on confirm
+      }).catch(() => {
+        // on cancel
+      });
     },
   },
 };

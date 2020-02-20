@@ -24,6 +24,7 @@
             width="3rem"
             height="3rem"
             src="https://img.yzcdn.cn/vant/cat.jpeg"
+            alt="用户头像"
           />
         </div>
         <div :class="$style.input">
@@ -70,6 +71,7 @@ Vue.use(Button)
   .use(Field);
 
 export default {
+  metaInfo: { title: '留言板' },
   components: {},
   data() {
     // 这里存放数据

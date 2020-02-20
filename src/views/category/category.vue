@@ -28,6 +28,7 @@
         </van-list>
       </template>
     </van-tree-select>
+    <powered-by></powered-by>
   </div>
 </template>
 

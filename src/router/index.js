@@ -42,6 +42,16 @@ const routes = [
         name: 'message',
         component: () => import(/* webpackChunkName: "message" */ '@/views/bbs/message.vue'),
       },
+      {
+        path: '/addresses',
+        name: 'addresses',
+        component: () => import(/* webpackChunkName: "address" */ '@/views/addresses/addresses.vue'),
+      },
+      {
+        path: '/addresses/edit',
+        name: 'edit',
+        component: () => import(/* webpackChunkName: "edit" */ '@/views/addresses/edit.vue'),
+      },
     ],
   },
 ];
