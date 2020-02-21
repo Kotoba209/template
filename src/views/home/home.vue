@@ -2,10 +2,8 @@
   <div :class="$style.home">
     <loading :loading="loading">
       <h1 :class="$style.title">Home page</h1>
-<<<<<<< Updated upstream
       <svg-icon :class="$style.user" icon-class="user" />
       <van-button block type="primary" @click="$router.push('/about')">About page</van-button>
-=======
       <svg-icon
         :class="$style.user"
         icon-class="user"
@@ -15,7 +13,6 @@
         type="primary"
         @click="$router.push('/about')"
       >About page</van-button>
->>>>>>> Stashed changes
     </loading>
   </div>
 </template>
@@ -41,9 +38,7 @@ export default {
 };
 </script>
 
-<<<<<<< Updated upstream
 <style module lang="less" src="./home.module.less" />
-=======
 <style module lang="less">
 /*@import "~@styles/main";*/
 @import '~@/styles/global.less';
@@ -68,4 +63,3 @@ export default {
   padding: 4px;
 }
 </style>
->>>>>>> Stashed changes

@@ -1,13 +1,12 @@
 <template>
-  <div :class="$style.exception">
+  <div :class="$style['exception']">
     <image-wrapper
       :src="require('@/assets/images/404.png')"
       alt="404 not found"
       msg="访问出问题了~"
-      style=""
     >
     </image-wrapper>
-    <div :class="[$style.flex, $style.goback]">
+    <div :class="$style.flexbox">
       <van-button
         :class="$style['success-btn']"
         @click="$router.go(-1)"
