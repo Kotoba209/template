@@ -11,10 +11,11 @@ yarn model [modelName]
 ### View
 
 ```bash
-yarn page [modelName] [filename]
+yarn page [modelName] [filename] [--less]
 ```
 > 在`@views/[modelName]`下生成`[filename].vue`文件
 > 不传入[filename]，则`[filename]`=`[modelName]`
+> 传入[--less]则生成独立的less文件
 
 ## Component
 ```bash

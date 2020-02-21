@@ -13,7 +13,7 @@ const model = argv._[0];
 const filename = argv._[1] || model;
 const less = argv.less || false;
 if (!model) {
-  console.log('Tips:\nyarn page [modelName] [filename]');
+  console.log('Tips:\nyarn page [modelName] [filename] [--less]');
   process.exit(0);
 }
 // const modelCap = inflected.camelize(model);
