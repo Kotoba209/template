@@ -25,6 +25,14 @@ yarn component [dirName] [componentName] -p=[page]
 > 如果传入`[page]`，则在`@views/[dirName]`下生成
 > 不传入[filename]，则`[filename]`=`[modelName]`
 
+## 项目初始化
+
+- `package.json` 
+  - name
+- `.env.development`
+  - VUE_APP_SITE_NAME
+  - VUE_APP_BASE_URL
+
 ## Project setup
 ```
 yarn install
