@@ -20,7 +20,7 @@ if (!model) {
 const modelPlur = inflected.pluralize(model);
 
 const lessTemplate = `
-@import '~@styles/global.less';
+@import '~@styles/main.less';
 
 // .${filename} {
 //   :global {}
