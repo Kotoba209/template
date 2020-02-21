@@ -6,17 +6,23 @@
 ```bash
 yarn model [modelName]
 ```
+> 在`@store/modules`下生成`[modelName].js`文件
 
 ### View
 
 ```bash
 yarn page [modelName] [filename]
 ```
+> 在`@views/[modelName]`下生成`[filename].vue`文件
+> 不传入[filename]，则`[filename]`=`[modelName]`
 
 ## Component
 ```bash
-yarn component [componentName] [dirName]
+yarn component [dirName] [componentName] -p=[page]
 ```
+> 在`@components/[dirName]下`下生成`[componentName].vue`文件
+> 如果传入`[page]`，则在`@views/[dirName]`下生成
+> 不传入[filename]，则`[filename]`=`[modelName]`
 
 ## Project setup
 ```

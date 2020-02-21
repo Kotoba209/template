@@ -9,18 +9,25 @@ const mkdirIfNotExists = (dir) => {
 // eslint-disable-next-line import/no-extraneous-dependencies
 const argv = require('minimist')(process.argv.slice(2));
 
-const component = argv._[0];
-const dirName = argv._[1] || component;
+const dirName = argv._[0];
+const component = argv._[1] || dirName;
+const page = argv.p;
 if (!component) {
-  console.log('用法：yarn component [componentName] [dirName]');
+  console.log('Tips:\nyarn component [dirName] [componentName] -p=[page]');
   process.exit(0);
 }
 const template = `<template>
   <div :class="$style['${component}']">
+
   </div>
 </template>
 
 <script>
+import Vue from 'vue';
+import { Button } from 'vant';
+
+Vue.use(Button);
+
 export default {
   name: '${component}',
   components: {},
@@ -29,21 +36,24 @@ export default {
 </script>
 
 <style module lang="less">
-.${component} {}
+// .${component} {}
 </style>
 `;
 
-const dir = `./src/components/${dirName}`;
+const dir = page ? `./src/views/${dirName}/components` : `./src/components/${dirName}`;
 mkdirIfNotExists(dir);
 process.chdir(dir);
 
 fs.writeFileSync(`${component}.vue`, template);
 
 const cap = inflected.camelize(inflected.underscore(component), true);
-console.log('Don\'t forget to add component to @src/components/index.js\n');
-console.log(`
-import ${cap} from './${dirName}/${component}';
+if (page) {
+  console.log(`\n1. 将以下两行代码添加到文件 @src/components/index.js
 
-Vue.component('${component}', ${cap});
-`);
+  import ${cap} from './${dirName}/${component}';
+
+  Vue.component('${component}', ${cap});
+  `);
+}
+
 process.exit(0);

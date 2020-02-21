@@ -11,12 +11,24 @@ const argv = require('minimist')(process.argv.slice(2));
 
 const model = argv._[0];
 const filename = argv._[1] || model;
+const less = argv.less || false;
 if (!model) {
-  console.log('用法：yarn page [modelName] [filename]');
+  console.log('Tips:\nyarn page [modelName] [filename]');
   process.exit(0);
 }
 // const modelCap = inflected.camelize(model);
 const modelPlur = inflected.pluralize(model);
+
+const lessTemplate = `
+@import '~@styles/global.less';
+
+// .${filename} {
+//   :global {}
+// }
+`;
+
+const style = less ? `<style module lang="less" src="./${filename}.module.less" />`
+  : `<style module lang="less">${lessTemplate}</style>`;
 
 const template = `<template>
   <div :class="$style['${filename}']">
@@ -41,9 +53,7 @@ export default {
 };
 </script>
 
-<style module lang="less">
-.${filename} {}
-</style>
+${style}
 `;
 
 const dir = `./src/views/${model}`;
@@ -52,7 +62,11 @@ process.chdir(dir);
 
 fs.writeFileSync(`${filename}.vue`, template);
 
-console.log('Don\'t forget to add route to @src/router/index.js');
+if (less) {
+  fs.writeFileSync(`${filename}.module.less`, lessTemplate);
+}
+
+console.log('\n1. 将路由定义添加到 @src/router/index.js');
 
 console.log(`{
   path: '/${modelPlur}',
