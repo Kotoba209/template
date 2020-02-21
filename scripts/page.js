@@ -69,7 +69,7 @@ if (less) {
 console.log('\n1. 将路由定义添加到 @src/router/index.js');
 
 console.log(`{
-  path: '/${modelPlur}',
+  path: '/${model}',
   name: '${filename}',
   component: () => import(/* webpackChunkName: "${filename}" */ '@/views/${model}/${filename}.vue'),
 },`);

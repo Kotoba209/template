@@ -34,11 +34,11 @@ export default {
 /*@import "~@styles/main";*/
 @import '~@/styles/global.less';
 .home {
-   :global {
+  :global {
     .van-button--primary {
       background-color: #ccc;
     }
-   }
+  }
 }
 
 /* .title {
