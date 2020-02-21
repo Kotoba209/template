@@ -59,6 +59,20 @@ const routes = [
       },
     ],
   },
+  {
+    path: '/product',
+    name: 'product-detail',
+    component: () => import(/* webpackChunkName: "product-detail" */ '@/views/product/product-detail.vue'),
+  },
+  {
+    path: '/exception/404',
+    name: 'exception',
+    component: () => import(/* webpackChunkName: "exception" */ '@/views/exception/404.vue'),
+  },
+  {
+    path: '*',
+    redirect: '/exception/404',
+  },
 ];
 
 const router = new VueRouter({
