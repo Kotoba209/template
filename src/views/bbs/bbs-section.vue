@@ -6,7 +6,7 @@
           v-for="i in 6"
           :key='i'
           :class="$style.area"
-          onClick='() => history.push(`/bbs/${val.id}`)'
+          @click="() => $router.push('/bbs/1')"
         >
           <div :class="$style.iconWrapper">
             <img
@@ -49,4 +49,4 @@ export default {
 };
 </script>
 
-<style module lang="less" src="./bbs.module.less"></style>
+<style module lang="less" src="./bbs-section.module.less"></style>
