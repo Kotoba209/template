@@ -3,7 +3,6 @@
     <loading :loading="loading">
       <h1 :class="$style.title">Home page</h1>
       <svg-icon :class="$style.user" icon-class="user" />
-      <svg-icon :class="$style.member" icon-class="member" />
       <van-button block type="primary" @click="$router.push('/about')">About page</van-button>
     </loading>
   </div>
@@ -30,35 +29,4 @@ export default {
 };
 </script>
 
-<style module lang="less">
-/*@import "~@styles/main";*/
-@import '~@/styles/global.less';
-.home {
-  :global {
-    .van-button--primary {
-      background-color: #ccc;
-    }
-  }
-}
-
-/* .title {
-  font-size: @font-size-lg;
-} */
-
-.user {
-  width: 6vw;
-  height: 6vw;
-  fill: #fff;
-  background: linear-gradient(45deg, rgba(202, 157, 251, 1) 0%, rgba(162, 96, 245, 1) 100%);
-  border-radius: 50%;
-  padding: 4px;
-}
-.member {
-  width: 6vw;
-  height: 6vw;
-  fill: #41f;
-  background: linear-gradient(45deg, rgba(202, 157, 251, 1) 0%, rgba(162, 96, 245, 1) 100%);
-  border-radius: 50%;
-  padding: 4px;
-}
-</style>
+<style module lang="less" src="./home.module.less" />
