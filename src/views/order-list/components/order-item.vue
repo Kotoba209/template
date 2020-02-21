@@ -74,4 +74,4 @@ export default {
 };
 </script>
 
-<style module lang="less" src='./index.module.less'></style>
+<style module lang="less" src='./order-item.module.less'></style>

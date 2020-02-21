@@ -24,7 +24,10 @@
               src="http://shoptest.zhihuasoft.com/images/8c/79/ee/90/8c79ee90313117bea1ccc1cddc3627e8.png"
               alt="商品图片"
             />
-            <span slot="text" :class="$style['goods-title']">
+            <span
+              slot="text"
+              :class="$style['goods-title']"
+            >
               【公益扶贫】万车村万盛养殖专业合作社的五脚猪（不支持线上交易）
             </span>
           </van-grid-item>

@@ -5,19 +5,19 @@
       sticky
     >
       <van-tab title="全部">
-        <order-list></order-list>
+        <order-item />
       </van-tab>
       <van-tab title="待付款">
-        <order-list></order-list>
+        <order-item />
       </van-tab>
       <van-tab title="待发货">
-        <order-list></order-list>
+        <order-item />
       </van-tab>
       <van-tab title="待收获">
-        <order-list></order-list>
+        <order-item />
       </van-tab>
       <van-tab title="已完成">
-        <order-list></order-list>
+        <order-item />
       </van-tab>
     </van-tabs>
   </div>
@@ -30,7 +30,7 @@ import {
   Tab,
   Tabs,
 } from 'vant';
-import OrderList from './order-list';
+import OrderItem from './components/order-item';
 
 Vue.use(Button)
   .use(Tab)
@@ -40,7 +40,7 @@ export default {
   name: 'order',
   metaInfo: { title: '我的订单' },
   components: {
-    OrderList,
+    OrderItem,
   },
   data() {
     return {

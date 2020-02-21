@@ -7,7 +7,7 @@
       @add="onAdd"
       @edit="onEdit"
     />
-    <powered-by/>
+    <powered-by />
   </div>
 </template>
 

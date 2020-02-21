@@ -71,7 +71,7 @@ Vue.use(Button)
   .use(Field);
 
 export default {
-  metaInfo: { title: '留言板' },
+  metaInfo: { title: '论坛留言' },
   components: {},
   data() {
     // 这里存放数据
@@ -95,4 +95,4 @@ export default {
   },
 };
 </script>
-<style module lang='less' src='./message.module.less'></style>
+<style module lang='less' src='./bbs-message.module.less'></style>

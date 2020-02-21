@@ -25,7 +25,7 @@ const routes = [
       {
         path: '/order',
         name: 'order',
-        component: () => import(/* webpackChunkName: "order" */ '@/views/order/order.vue'),
+        component: () => import(/* webpackChunkName: "order" */ '@/views/order-list/order-list.vue'),
       },
       {
         path: '/category',
@@ -35,22 +35,27 @@ const routes = [
       {
         path: '/bbs',
         name: 'bbs',
-        component: () => import(/* webpackChunkName: "bbs" */ '@/views/bbs/bbs.vue'),
+        component: () => import(/* webpackChunkName: "bbs" */ '@/views/bbs/bbs-section.vue'),
       },
       {
         path: '/bbs/:id',
         name: 'message',
-        component: () => import(/* webpackChunkName: "message" */ '@/views/bbs/message.vue'),
+        component: () => import(/* webpackChunkName: "message" */ '@/views/bbs/bbs-message.vue'),
       },
       {
         path: '/addresses',
         name: 'addresses',
-        component: () => import(/* webpackChunkName: "address" */ '@/views/addresses/addresses.vue'),
+        component: () => import(/* webpackChunkName: "address" */ '@/views/addresses/address-list.vue'),
       },
       {
         path: '/addresses/edit',
         name: 'edit',
-        component: () => import(/* webpackChunkName: "edit" */ '@/views/addresses/edit.vue'),
+        component: () => import(/* webpackChunkName: "edit" */ '@/views/addresses/address-edit.vue'),
+      },
+      {
+        path: '/cart',
+        name: 'cart',
+        component: () => import(/* webpackChunkName: "cart" */ '@/views/cart/cart.vue'),
       },
     ],
   },
