@@ -12,6 +12,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/valid-v-else': 'off',
     'object-curly-newline': 'off',
+    'arrow-parens': 'off',
     'import/extensions': ['error', 'ignorePackages', {
       'vue': 'never',
       'js': 'never',

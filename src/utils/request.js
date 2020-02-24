@@ -33,12 +33,13 @@ export function defaultHandler() {}
  * 异常处理程序
  */
 const errorHandler = (error) => {
-  const { response } = error;
+  const { response, data } = error;
   if (response && response.status) {
     if (response.status === 401) { // 登录失败
       // router.push('/user/login');
     }
-    const errorText = codeMessage[response.status] || response.statusText;
+    const { msg = '' } = data || {};
+    const errorText = msg || codeMessage[response.status] || response.statusText;
     Notify(errorText || '未知错误');
   }
   return Promise.reject(error);
