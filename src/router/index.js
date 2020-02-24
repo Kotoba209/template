@@ -23,11 +23,6 @@ const routes = [
         component: () => import(/* webpackChunkName: "account" */ '@/views/account/account.vue'),
       },
       {
-        path: '/order',
-        name: 'order',
-        component: () => import(/* webpackChunkName: "order" */ '@/views/order-list/order-list.vue'),
-      },
-      {
         path: '/category',
         name: 'category',
         component: () => import(/* webpackChunkName: "category" */ '@/views/category/category.vue'),
@@ -62,7 +57,27 @@ const routes = [
         name: 'checkout',
         component: () => import(/* webpackChunkName: "checkout" */ '@/views/checkout/checkout.vue'),
       },
+      {
+        path: '/shop',
+        name: 'shop-login',
+        component: () => import(/* webpackChunkName: "shop-home" */ '@/views/shop/shop-login.vue'),
+      },
+      {
+        path: '/shop-stats/:id',
+        name: 'shop-stats',
+        component: () => import(/* webpackChunkName: "shop-stats" */ '@/views/shop/shop-stats.vue'),
+      },
+      {
+        path: '/qualification',
+        name: 'qualification',
+        component: () => import(/* webpackChunkName: "qualification" */ '@/views/qualification/qualification.vue'),
+      },
     ],
+  },
+  {
+    path: '/order',
+    name: 'order',
+    component: () => import(/* webpackChunkName: "order" */ '@/views/order-list/order-list.vue'),
   },
   {
     path: '/product',

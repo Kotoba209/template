@@ -59,7 +59,7 @@ export default {
 <style module lang="less">
 .addresses {
   min-height: 80vh;
-  padding-bottom: 180px;
+  padding-bottom: 200px;
   :global {
     .van-address-list {
       position: relative;

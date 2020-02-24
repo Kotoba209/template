@@ -1,0 +1,93 @@
+@import '~@styles/main.less';
+
+.shop-stats {
+  min-height: 80vh;
+
+  :global {
+    .van-tabs__nav--card {
+      margin: 0 16px;
+      border-radius: 10px;
+    }
+
+    .van-tabs__content {
+      margin: 15px 16px 0;
+    }
+
+    .van-tabs__nav--card {
+      border-color: rgb(60, 74, 84);
+    }
+
+    .van-tabs__nav--card .van-tab.van-tab--active {
+      background-color: rgb(60, 74, 84);
+      color: #fff;
+    }
+
+    .van-tabs__nav--card .van-tab {
+      color: rgb(60, 74, 84);
+      border-color: rgb(60, 74, 84);
+    }
+
+    .van-col {
+      text-align: center;
+    }
+  }
+}
+
+.goods {
+  :global {
+    .van-card {
+      background-color: #fff;
+      padding-left: 0;
+    }
+
+    .van-card__title {
+      padding: 15px 10px;
+      font-size: 32px;
+    }
+
+    .van-card__price {
+      font-size: 28px;
+      color: #fc5859;
+      padding: 15px 10px;
+    }
+  }
+}
+
+.sta {
+  margin-top: 40px;
+
+  :global {
+    .van-col {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+}
+
+.top {
+  :global {
+    .van-card {
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.site {
+  padding: 20px 10px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  font-weight: 400;
+  color: #555;
+}
+
+.site-name {
+  font-size: 34px;
+  color: #000;
+}
+
+.person {
+  font-size: 30px;
+  color: #888;
+}

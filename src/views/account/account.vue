@@ -122,6 +122,7 @@
         <van-grid-item
           icon="photo-o"
           text="企业资质"
+          to="/qualification"
         >
           <svg-icon
             slot="icon"
@@ -132,6 +133,7 @@
         <van-grid-item
           icon="photo-o"
           text="店铺管理"
+          to="/shop"
         >
           <svg-icon
             slot="icon"

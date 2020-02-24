@@ -74,7 +74,9 @@ export default {
   created() { },
   computed: {},
   methods: {
-    onSubmit() { },
+    onSubmit() {
+      this.$router.push('/checkout');
+    },
   },
 };
 </script>

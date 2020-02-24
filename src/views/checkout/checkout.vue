@@ -6,6 +6,7 @@
           title="单元格"
           label="海南澄迈县金江镇嘉乐镇"
           is-link
+          to="/addresses"
         >
           <div
             :class="$style['name-phone']"
@@ -67,7 +68,7 @@ Vue.use(Button)
 
 export default {
   name: 'checkout',
-  metaInfo: { title: '' },
+  metaInfo: { title: '订单结算' },
   data() {
     return {};
   },

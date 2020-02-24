@@ -1,0 +1,49 @@
+// <style module lang="less" src="./shop-login.module.less"></style>
+.shop-login {
+  min-height: 80vh;
+  :global {
+    .van-image {
+      margin-right: 10px;
+    }
+    .van-form {
+      width: 80%;
+      margin-top: 160px;
+    }
+    .van-cell,
+    .van-field {
+      background-color: transparent;
+    }
+    .van-cell:not(:last-child):after {
+      border-color: #ddd;
+    }
+  }
+}
+.btn-wrap {
+  margin: 120px auto 0;
+  :global {
+    .van-button--round {
+      border-radius: 0;
+    }
+    .van-button--info {
+      background-color: #fc5859;
+      border-color: #fc5859;
+    }
+  }
+}
+.shop-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+}
+.title-text {
+  font-size: 64px;
+  font-weight: 700;
+  color: #fc5859;
+}
