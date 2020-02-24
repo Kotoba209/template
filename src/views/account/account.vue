@@ -35,7 +35,7 @@
         title="我的订单"
         value="全部订单"
         is-link
-        url="/order"
+        url="/orders"
       />
       <van-grid>
         <van-grid-item
