@@ -1,0 +1,116 @@
+@import '~@styles/main.less';
+
+.checkout {
+  min-height: 80vh;
+
+  :global {
+    .van-submit-bar__bar {
+      padding-right: 0px;
+    }
+
+    .van-submit-bar {
+      transform: translateY(-100%);
+    }
+
+    .van-submit-bar__price {
+      margin-left: 10px;
+    }
+
+    .van-button--round {
+      border-radius: 0;
+    }
+
+    .van-card {
+      padding-left: 0;
+      background-color: #fff;
+    }
+
+    .van-card__thumb img {
+      border-radius: 0;
+    }
+
+    .van-card__title {
+      padding: 15px 10px;
+      font-size: 32px;
+    }
+
+    .van-card__price {
+      font-size: 28px;
+      color: #fc5859;
+      padding: 15px 10px;
+    }
+
+    .van-card__num {
+      padding: 15px 10px;
+      color: #333
+    }
+  }
+}
+
+.goods {
+  :global {
+    .van-cell {
+      background-color: transparent;
+    }
+
+    .van-card {
+      background-color: transparent;
+    }
+
+    .van-cell:not(:last-child):after {
+      border-bottom: 1px solid #d8d8d8;
+    }
+  }
+}
+
+.address {
+  :global {
+    .van-hairline--top-bottom:after {
+      content: "";
+      bottom: 0 !important;
+      height: .4vw !important;
+      position: absolute;
+      border: none !important;
+      top: auto !important;
+      background: -webkit-repeating-linear-gradient(135deg, #ff6c6c, #ff6c6c 20%, transparent 0, transparent 25%, #1989fa 0, #1989fa 45%, transparent 0, transparent 50%);
+      background: repeating-linear-gradient(-45deg, #ff6c6c, #ff6c6c 20%, transparent 0, transparent 25%, #1989fa 0, #1989fa 45%, transparent 0, transparent 50%);
+      background-size: 48vw;
+    }
+
+    .van-cell__label {
+      padding: 15px 10px 15px 0;
+      font-size: 28px;
+    }
+  }
+}
+
+.goods-title {
+  :global {
+    .van-cell__title {
+      font-size: 36px;
+      font-weight: 700;
+      color: #333;
+    }
+  }
+}
+
+.amount {
+  :global {
+    .van-cell__value {
+      color: #333;
+    }
+  }
+}
+
+.name-phone {
+  text-align: left;
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.phone {
+  margin-left: 10px;
+}
