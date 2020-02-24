@@ -23,9 +23,13 @@ Vue.use(Tabbar).use(TabbarItem);
 
 export default {
   name: 'BasicLayout',
+  metaInfo() {
+    return { title: this.title };
+  },
   data() {
-    const { tabIndex } = this.$route.meta;
+    const { tabIndex, title } = this.$route.meta;
     return {
+      title,
       activeTab: tabIndex,
     };
   },
