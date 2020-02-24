@@ -8,7 +8,7 @@
 export default {
   name: 'App',
   metaInfo: {
-    title: 'Seed',
+    title: '',
     titleTemplate: (title) => (title ? `${title} - ${process.env.VUE_APP_SITE_NAME}` : process.env.VUE_APP_SITE_NAME),
     meta: [
       { charset: 'utf-8' },

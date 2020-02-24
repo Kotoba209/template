@@ -16,7 +16,7 @@ const routes = [
         path: '/',
         name: 'home',
         component: Home,
-        meta: { tabIndex: 0 },
+        meta: { tabIndex: 0, title: '首页' },
       },
       {
         path: '/account',
@@ -34,7 +34,7 @@ const routes = [
         path: '/category',
         name: 'category',
         component: () => import(/* webpackChunkName: "category" */ '@/views/category/category.vue'),
-        meta: { tabIndex: 1 },
+        meta: { tabIndex: 1, title: '产品分类' },
       },
       {
         path: '/bbs',
