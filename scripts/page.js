@@ -44,7 +44,6 @@ Vue.use(Button);
 
 export default {
   name: '${filename}',
-  metaInfo: { title: '' },
   data() {
     return {};
   },
