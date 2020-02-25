@@ -21,7 +21,6 @@ Vue.use(Button)
 
 export default {
   name: 'addresses',
-  metaInfo: { title: '我的收货地址' },
   data() {
     return {
       chosenAddressId: '1',

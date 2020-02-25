@@ -33,6 +33,12 @@ export default {
       activeTab: tabIndex,
     };
   },
+  beforeRouteUpdate(to, from, next) {
+    const { tabIndex, title } = to.meta;
+    this.title = title;
+    this.activeTab = tabIndex;
+    next();
+  },
 };
 </script>
 <style module lang="less">
