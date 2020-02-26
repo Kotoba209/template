@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import '@/assets/icons';
 import { createToken } from '@api/token';
-// import { setToken } from '@utils/auth';
+import { setToken } from '@utils/auth';
 import App from './App';
 import router from './router';
 import store from './store';
@@ -14,9 +14,9 @@ Object.keys(filters).forEach(key => {
 
 Vue.config.productionTip = false;
 
-// if (process.env.NODE_ENV === 'development') {
-//   setToken('oLENw05LJYxUD9_W5iQeoNvHSx88');
-// }
+if (process.env.NODE_ENV === 'development') {
+  setToken('oLENw05LJYxUD9_W5iQeoNvHSx88');
+}
 
 router.beforeEach((to, from, next) => {
   const { token = '' } = store.getters;
