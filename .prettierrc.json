@@ -8,12 +8,12 @@
   "tabWidth": 2,
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
-  "parser": "vue",
+  "parser": "babel",
   "overrides": [
     {
-      "files": "*.less",
+      "files": "*.vue",
       "options": {
-        "parser": "css"
+        "parser": "vue"
       }
     }
   ]
