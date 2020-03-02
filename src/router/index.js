@@ -45,12 +45,14 @@ const routes = [
       {
         path: '/addresses',
         name: 'addresses',
+        // prettier-ignore
         component: () => import(/* webpackChunkName: "address" */ '@/views/addresses/address-list.vue'),
         meta: { tabIndex: 3, title: '地址列表' },
       },
       {
         path: '/addresses/edit',
         name: 'edit',
+        // prettier-ignore
         component: () => import(/* webpackChunkName: "edit" */ '@/views/addresses/address-edit.vue'),
         meta: { tabIndex: 3, title: '地址编辑' },
       },
@@ -81,6 +83,7 @@ const routes = [
       {
         path: '/qualification',
         name: 'qualification',
+        // prettier-ignore
         component: () => import(/* webpackChunkName: "qualification" */ '@/views/qualification/qualification.vue'),
         meta: { tabIndex: 3, title: '企业资质' },
       },
@@ -95,7 +98,9 @@ const routes = [
   {
     path: '/product',
     name: 'product-detail',
+    // prettier-ignore
     component: () => import(/* webpackChunkName: "product-detail" */ '@/views/product/product-detail.vue'),
+    meta: { title: '' },
   },
   {
     path: '/exception/404',

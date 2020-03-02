@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "preview": "vue-cli-service build --mode preview",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
@@ -18,7 +19,7 @@
     "core-js": "^3.4.4",
     "dayjs": "^1.8.19",
     "umi-request": "^1.2.18",
-    "vant": "^2.5.2",
+    "vant": "^2.5.3",
     "vue": "^2.6.10",
     "vue-meta": "^2.3.2",
     "vue-router": "^3.1.3",

@@ -2,7 +2,7 @@ const fs = require('fs');
 // eslint-disable-next-line import/no-extraneous-dependencies
 const inflected = require('inflected');
 
-const mkdirIfNotExists = (dir) => {
+const mkdirIfNotExists = dir => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir);
 };
 
@@ -32,6 +32,7 @@ export default {
   name: '${component}',
   components: {},
   props: {},
+  methods: {},
 };
 </script>
 

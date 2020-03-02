@@ -32,7 +32,7 @@ const style = less ? `<style module lang="less" src="./${filename}.module.less" 
 
 const template = `<template>
   <div :class="$style['${filename}']">
-    ${filename}
+    ${filename} Page
   </div>
 </template>
 
@@ -44,11 +44,13 @@ Vue.use(Button);
 
 export default {
   name: '${filename}',
+  components: {},
   data() {
     return {};
   },
   created() {},
   computed: {},
+  methods: {},
 };
 </script>
 

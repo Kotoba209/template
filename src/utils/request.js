@@ -5,7 +5,7 @@
 import Vue from 'vue';
 import { Notify } from 'vant';
 import { extend, ResponseError } from 'umi-request';
-import { getToken, setToken } from '@/utils/auth';
+import { getToken } from '@/utils/auth';
 
 Vue.use(Notify);
 
@@ -55,9 +55,6 @@ const request = extend({
 });
 
 request.interceptors.request.use((url, options) => {
-  if (process.env.NODE_ENV === 'development') {
-    setToken('oLENw05LJYxUD9_W5iQeoNvHSx88');
-  }
   const token = getToken();
   if (!token) {
     return ({ url, options });

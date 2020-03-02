@@ -1,10 +1,7 @@
 <template>
   <div :class="$style['message']">
     <van-cell value="0条留言">
-      <div
-        slot="title"
-        :class="$style.title"
-      >
+      <div slot="title" :class="$style.title">
         <van-icon
           size="40"
           name="http://shoptest.zhihuasoft.com/images/89/6e/41/a7/896e41a7c08bab91594dde523bb0ec2f.png"
@@ -30,18 +27,9 @@
         <div :class="$style.input">
           <div :class="$style['inp-nav']">
             <span :class="$style['nick-name']">昵称</span>
-            <van-button
-              size="small"
-              type="danger"
-            >留言</van-button>
+            <van-button size="small" type="danger">留言</van-button>
           </div>
-          <van-field
-            rows="2"
-            autosize
-            type="textarea"
-            placeholder="请输入留言"
-            show-word-limit
-          />
+          <van-field rows="2" autosize type="textarea" placeholder="请输入留言" show-word-limit />
         </div>
       </div>
     </van-panel>
@@ -50,16 +38,7 @@
 
 <script>
 import Vue from 'vue';
-import {
-  Button,
-  Cell,
-  Grid,
-  GridItem,
-  Icon,
-  Panel,
-  Image,
-  Field,
-} from 'vant';
+import { Button, Cell, Grid, GridItem, Icon, Panel, Image, Field } from 'vant';
 
 Vue.use(Button)
   .use(Cell)
@@ -75,24 +54,16 @@ export default {
   components: {},
   data() {
     // 这里存放数据
-    return {
-
-    };
+    return {};
   },
   // 监听属性 类似于data概念
   computed: {},
   // 监控data中的数据变化
-  methods: {
-
-  },
+  methods: {},
   // 生命周期 - 创建完成（可以访问当前this实例）
-  created() {
-
-  },
+  created() {},
   // 生命周期 - 挂载完成（可以访问DOM元素）
-  mounted() {
-
-  },
+  mounted() {},
 };
 </script>
-<style module lang='less' src='./bbs-message.module.less'></style>
+<style module lang="less" src="./bbs-message.module.less"></style>

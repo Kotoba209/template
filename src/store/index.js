@@ -4,6 +4,7 @@ import Vuex from 'vuex';
 import getters from '@/store/getters';
 import loading from '@/store/modules/loading';
 import user from '@/store/modules/user';
+import token from '@/store/modules/token';
 
 Vue.use(Vuex);
 
@@ -31,6 +32,7 @@ const store = new Vuex.Store({
   modules: {
     user,
     loading,
+    token,
   },
   getters,
   plugins: [loadingPlugin],
