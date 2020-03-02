@@ -16,6 +16,7 @@
             :key="value"
             icon="photo-o"
             text="文字"
+            to="/product"
           >
             <van-image
               slot="icon"
@@ -63,7 +64,7 @@ Vue.use(Button)
 
 export default {
   name: 'category',
-  metaInfo: { title: '商品分类' },
+  // metaInfo: { title: '商品分类' },
   data() {
     return {
       active: 0,

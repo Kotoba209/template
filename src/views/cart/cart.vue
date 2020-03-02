@@ -64,7 +64,7 @@ Vue.use(Button)
 
 export default {
   name: 'cart',
-  metaInfo: { title: '购物车' },
+  // metaInfo: { title: '购物车' },
   data() {
     return {
       checked: true,

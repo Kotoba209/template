@@ -23,7 +23,7 @@ Vue.use(AddressEdit)
   .use(Toast);
 
 export default {
-  metaInfo: { title: '地址编辑' },
+  // metaInfo: { title: '地址编辑' },
   components: {},
   data() {
     return {

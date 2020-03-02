@@ -89,7 +89,7 @@ const routes = [
   {
     path: '/order',
     name: 'order',
-    component: () => import(/* webpackChunkName: "order" */ '@/views/order-list/order-list.vue'),
+    component: () => import(/* webpackChunkName: "order" */ '@/views/order/order-list.vue'),
     meta: { title: '我的订单' },
   },
   {

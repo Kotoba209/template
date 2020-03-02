@@ -57,7 +57,7 @@ Vue.use(Button)
 
 export default {
   name: 'shop-home',
-  metaInfo: { title: '账号绑定' },
+  // metaInfo: { title: '账号绑定' },
   data() {
     return {
       username: '',

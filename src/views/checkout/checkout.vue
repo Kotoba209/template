@@ -68,7 +68,7 @@ Vue.use(Button)
 
 export default {
   name: 'checkout',
-  metaInfo: { title: '订单结算' },
+  // metaInfo: { title: '订单结算' },
   data() {
     return {};
   },

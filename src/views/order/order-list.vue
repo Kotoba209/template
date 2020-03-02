@@ -38,7 +38,7 @@ Vue.use(Button)
 
 export default {
   name: 'order',
-  metaInfo: { title: '我的订单' },
+  // metaInfo: { title: '我的订单' },
   components: {
     OrderItem,
   },

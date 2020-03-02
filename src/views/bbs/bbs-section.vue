@@ -40,7 +40,7 @@ Vue.use(Button)
 
 export default {
   name: 'bbs',
-  metaInfo: { title: '论坛互动' },
+  // metaInfo: { title: '论坛互动' },
   data() {
     return {};
   },

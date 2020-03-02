@@ -22,7 +22,7 @@ Vue.use(Button)
 
 export default {
   name: 'qualification',
-  metaInfo: { title: '企业资质' },
+  // metaInfo: { title: '企业资质' },
   data() {
     return {
       imageList: [

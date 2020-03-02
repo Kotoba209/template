@@ -35,7 +35,7 @@
         title="我的订单"
         value="全部订单"
         is-link
-        url="/orders"
+        url="/order"
       />
       <van-grid>
         <van-grid-item
@@ -180,7 +180,7 @@ Vue.use(Button)
 
 export default {
   name: 'account',
-  metaInfo: { title: '个人中心' },
+  // metaInfo: { title: '个人中心' },
   components: {
   },
   data() {

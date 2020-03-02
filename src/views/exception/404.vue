@@ -29,7 +29,7 @@ Vue.use(Button);
 
 export default {
   name: 'exception',
-  metaInfo: { title: '404' },
+  // metaInfo: { title: '404' },
   components: {
     // 'image-wrapper': ImageWrapper,
   },
