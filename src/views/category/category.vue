@@ -20,8 +20,8 @@
           >
             <van-image
               slot="icon"
-              width="80"
-              height="80"
+              width="100%"
+              height="100%"
               src="http://shoptest.zhihuasoft.com/images/8c/79/ee/90/8c79ee90313117bea1ccc1cddc3627e8.png"
               alt="商品图片"
             />

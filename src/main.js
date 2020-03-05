@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import '@/assets/icons';
+import '@/assets/fonts/iconfont.css';
 import { createToken } from '@api/token';
 import { setToken } from '@utils/auth';
 import App from './App';
